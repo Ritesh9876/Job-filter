@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size:15px;
+    background-color:hsl(180, 52%, 96%) ;
+}
+header{
+    background-color: hsl(180, 29%, 50%);
+}
+header img{
+    width:100vw;
+    height:20vh;
+}
+.filter-options{
+    background-color:hsl(180, 52%, 96%);
+    margin-top:20px;
+    border:1px solid black;
+    display:flex;
+    justify-content:space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.option{
+    padding:10px 0;
+}
+.option a{
+padding:10px 8px;
+text-decoration: none;
+color:black;
+}
+
+.content{
+    margin-top:30px;
+}
+/* JOb */
+.cardContent{
+display:flex;
+flex-wrap: wrap;
+border-radius: 8px;
+border-left:5px solid hsl(180, 29%, 50%) ;
+margin-top:4rem;
+}
+/* jobcard */
+.company{
+    flex:0.5;
+    display:flex;
+    flex-direction: column;
+    width:24rem;
+    margin-left:1rem;
+}
+
+/* comapany details styling */
+.head{
+   margin-top:10px;
+    width:13rem;
+    height:2rem;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.CompanyName{
+    font-weight:800;
+    color:rgb(36, 151, 151);
+    font-size:15px;
+}
+.new{
+    padding:2px 6px;
+    padding-top:5px;
+    background-color:rgb(36, 151, 151);
+    color:white;
+    border-radius:15px ;
+    font-weight: 800;
+    font-size:10px;
+}
+.featured{
+    padding:2px 6px;
+    padding-top:5px;
+    background-color:hsl(180, 14%, 20%);
+    color:white;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size:10px;
+}
+.position{
+    width:15rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom:10px;
+}
+.position p{
+    color:black;
+    font-weight: 900;
+    font-size:16px;
+    letter-spacing: 1px;
+}
+.details{
+    display:flex;
+    justify-content:space-between;
+   width:15rem;
+}
+.postAt,.contract,.location{
+    font-weight: 600;
+    color: hsl(180, 14%, 20%);
+}
+
+/* Required skills */
+.Allskills{
+    flex:1;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skill{
+    margin-right: 10px;
+    font-weight: 900;
+    padding:3px 6px;
+    border-radius: 8px;
+    color:hsl(180, 29%, 50%);
+    background-color:hsl(180, 31%, 95%)
+    ;
+}
+
+@media screen and (max-width:500px){
+    .cardContent{
+        flex-direction: column;
+    }
+    .logo{
+        width:80vw;
+    }
+    .company{
+        width:80vw;
+    }
+    .Allskills{
+        width:100vw;
+        padding-top:1rem;
+        border-top:1px solid black;
+        margin-top:10px;
+        justify-content: center;
+    }
+    .skill{
+        margin-right:20px;
+    }
+}
+.filterAdded{
+    margin-top:40px;
+    display: flex;
+    justify-content:flex start;
+    flex:wrap;
+}
+.clearAll{
+    margin-right:20px;
+}
+.clearAll a{
+    color:hsl(180, 29%, 50%);
+}
+.filterDiv{
+    display:flex;
+    margin-right:10px;
+   
+}
+.filterTag{
+    font-weight: 900;
+    padding:3px 6px;
+    border-radius: 8px;
+    color:hsl(180, 29%, 50%);
+    background-color:hsl(180, 52%, 96%);
+}
+.filterDiv .fas{
+color:white;
+background-color:hsl(180, 29%, 50%) ;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+padding:3px 6px;
+}
+.filterDiv .fas:hover{
+    cursor: pointer;
+}
+
+.attribution { font-size: 15px; text-align: center; margin-top:20px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
